@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.name {
+  font-size: 8vmin;
+  font-weight: 900;
+  background-image: url(./images/paper.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.choices {
+  width: 70vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.choice {
+  border-radius: 50%;
+  box-shadow: rgb(108, 108, 108) -5px 5px 20px;
+}
+
+.choice:hover {
+  cursor: pointer;
+  box-shadow: black 0px 0px 20px;
+  opacity: 0.7;
+}
+
+.choice img {
+  height: 160px;
+  width: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.score-board {
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid #a95c72;
+  border-radius: 20px;
+  box-shadow: #a95c72 5px 5px;
+  gap: 3rem;
+  border-radius: 10px;
+  padding: 2rem;
+  font-size: 3vmin;
+}
+
+.message {
+  font-size: 5vmin;
+  font-weight: 500;
+  border: 2px solid #5879b4;
+  padding: 1rem;
+  border-radius: 20px;
+  box-shadow: #5879b4 5px 5px;
+}
